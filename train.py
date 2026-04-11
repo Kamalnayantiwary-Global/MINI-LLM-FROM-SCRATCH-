@@ -34,6 +34,6 @@ for iter in range(max_iters):
 print("\nModel ne ye seekha:\n")
 context = torch.zeros((1, 1), dtype=torch.long, device=device)
 print(decode(model.generate(context, max_new_tokens=100)[0].tolist()))
-# Model ke weights ko save karo
+
 torch.save(model.state_dict(), 'model_weights.pth')
 print("Model save ho gaya! Ab 'model_weights.pth' file ban gayi hogi.")
