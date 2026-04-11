@@ -45,7 +45,7 @@ This repository contains a character-level language model that learns to generat
 4. **Start Generating**
     python chat.py
 👨‍💻 Author
-​Kamal Nayan Tiwary B.Tech (RCET) | AIML Enthusiast LinkedIn | GitHub
+​Kamal Nayan Tiwary B.Tech (RCET) | AIML Enthusiast | DSA 
 ​If you find this project helpful, feel free to ⭐ the repository!
    
   
