@@ -3,7 +3,7 @@ from config import device
 
 
 def load_data():
-    # Hum ek simple text file use karenge, abhi ke liye maan lo 'input.txt' hai
+    
     with open('input.txt', 'r', encoding='utf-8') as f:
         text = f.read()
 
