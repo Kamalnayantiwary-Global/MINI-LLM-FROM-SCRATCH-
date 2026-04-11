@@ -17,12 +17,12 @@ class Head(nn.Module):
         B, T, C = x.shape
         k = self.key(x)   
         q = self.query(x) 
-        # Compute attention scores ("affinities")
+        
         wei = q @ k.transpose(-2, -1) * C**-0.5
         wei = wei.masked_fill(self.tril[:T, :T] == 0, float('-inf'))
         wei = F.softmax(wei, dim=-1)
         wei = self.dropout(wei)
-        # Apply the weighted aggregation of the values
+       
         v = self.value(x)
         out = wei @ v
         return out
