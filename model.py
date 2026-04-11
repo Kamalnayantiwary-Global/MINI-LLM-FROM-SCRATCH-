@@ -3,7 +3,7 @@ import torch.nn as nn
 from torch.nn import functional as F
 from config import device, n_embd, block_size, n_head, n_layer, dropout
 
-# 1. Self-Attention Head: Ye model ko batata hai ki kis word par dhyan dena hai
+
 class Head(nn.Module):
     def __init__(self, head_size):
         super().__init__()
@@ -27,7 +27,7 @@ class Head(nn.Module):
         out = wei @ v
         return out
 
-# 2. Multi-Head Attention: Kai saare heads milkar alag-alag patterns seekhte hain
+
 class MultiHeadAttention(nn.Module):
     def __init__(self, num_heads, head_size):
         super().__init__()
@@ -40,7 +40,6 @@ class MultiHeadAttention(nn.Module):
         out = self.dropout(self.proj(out))
         return out
 
-# 3. Feed Forward: Ek simple neural network jo data ko process karta hai
 class FeedForward(nn.Module):
     def __init__(self, n_embd):
         super().__init__()
@@ -54,7 +53,7 @@ class FeedForward(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-# 4. Transformer Block: Attention aur FeedForward ka combination
+
 class Block(nn.Module):
     def __init__(self, n_embd, n_head):
         super().__init__()
@@ -69,7 +68,6 @@ class Block(nn.Module):
         x = x + self.ffwd(self.ln2(x))
         return x
 
-# 5. Final LLM Model
 class MiniLanguageModel(nn.Module):
     def __init__(self, vocab_size):
         super().__init__()

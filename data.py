@@ -1,7 +1,7 @@
 import torch
 from config import device
 
-# Text file ko load karne ka logic
+
 def load_data():
     # Hum ek simple text file use karenge, abhi ke liye maan lo 'input.txt' hai
     with open('input.txt', 'r', encoding='utf-8') as f:
@@ -18,7 +18,7 @@ def load_data():
     data = torch.tensor(encode(text), dtype=torch.long)
     return data, vocab_size, encode, decode
 
-# Training/Validation split
+
 def get_batch(data, batch_size, block_size):
     ix = torch.randint(len(data) - block_size, (batch_size,))
     x = torch.stack([data[i:i+block_size] for i in ix])
