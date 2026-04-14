@@ -2,6 +2,16 @@
 made by~
 KAMAL NAYAN TIWARY 
 
+# 🧠 Mini LLM from Scratch
+
+by ~ **KAMAL NAYAN TIWARY**
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python: 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg?logo=python&logoColor=white)
+![Framework: PyTorch](https://img.shields.io/badge/Framework-PyTorch-ee4c2c.svg?logo=pytorch&logoColor=white)
+![Field: NLP / GenAI](https://img.shields.io/badge/Field-NLP%20%2F%20GenAI-brightgreen.svg)
+<br>
+
 A lightweight, high-performance **Decoder-only Transformer** architecture (GPT-style) built entirely from scratch using PyTorch. This project demonstrates the fundamental mechanics of Large Language Models, including Multi-Head Attention and Positional Encodings.
 
 ---
