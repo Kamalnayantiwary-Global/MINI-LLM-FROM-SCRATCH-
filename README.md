@@ -2,9 +2,6 @@
 made by~
 KAMAL NAYAN TIWARY 
 
-# 🧠 Mini LLM from Scratch
-
-by ~ **KAMAL NAYAN TIWARY**
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python: 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg?logo=python&logoColor=white)
